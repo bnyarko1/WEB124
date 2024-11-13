@@ -1,0 +1,87 @@
+/* BENJAMIN NYARKO 11/2/2024 */
+html {
+    background: #018DED url(https://hips.hearstapps.com/hmg-prod/images/snowdonia-national-park-in-wales-uk-royalty-free-image-1729091363.jpg?crop=0.530xw:1.00xh;0.239xw,0&resize=980:*);
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+  }
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid rgb(122, 13, 247);
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+
+  .hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+
+  .number {
+    position: absolute;
+    font-size: 2rem;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .number1 { top: 15%; left: 85%; }
+  .number2 { top: 30%; left: 95%; }
+  .number3 { top: 50%; left: 100%; }
+  .number4 { top: 70%; left: 95%; }
+  .number5 { top: 85%; left: 85%; }
+  .number6 { top: 100%; left: 50%; }
+  .number7 { top: 85%; left: 15%; }
+  .number8 { top: 70%; left: 5%; }
+  .number9 { top: 50%; left: 0%; }
+  .number10 { top: 30%; left: 5%; }
+  .number11 { top: 15%; left: 15%; }
+  .number12 { top: 0%; left: 50%; }
+
+  .date, .day {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(32, 181, 240);
+  }
+
+  .date {
+    margin-bottom: 5px;
+  }
+
+  .day {
+    margin-bottom: 20px;
+  }
